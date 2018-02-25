@@ -10,12 +10,13 @@ import UIKit
 
 class ListViewController: UITableViewController {
     @IBOutlet weak var noContentView: UIView?
-    var eventHandler: Optional<String>
+    var eventHandler: Optional<String> = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view = self.noContentView
     }
 
     override func didReceiveMemoryWarning() {

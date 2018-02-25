@@ -27,12 +27,25 @@
         <!--List View Controller-->
         <scene sceneID="dI2-ud-kbY">
             <objects>
-                <viewController storyboardIdentifier="ListViewController" id="OSK-k8-oIZ" customClass="ListViewController" customModule="case" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController storyboardIdentifier="ListViewController" id="OSK-k8-oIZ" customClass="ListViewController" customModule="case" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <outlet property="noContentView" destination="Gx0-tc-oto" id="wm4-oo-8Bs"/>
+                    </connections>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtR-ha-3L4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="Gx0-tc-oto">
+                <view contentMode="scaleToFill" id="Gx0-tc-oto" userLabel="No Content View">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="438"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="x8X-0q-a4q">
+                            <rect key="frame" x="40" y="139" width="160" height="160"/>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="x8X-0q-a4q" firstAttribute="centerY" secondItem="Gx0-tc-oto" secondAttribute="centerY" id="2Cj-Qh-5vj"/>
+                        <constraint firstItem="x8X-0q-a4q" firstAttribute="centerX" secondItem="Gx0-tc-oto" secondAttribute="centerX" id="5Xe-6Z-SLE"/>
+                    </constraints>
                     <viewLayoutGuide key="safeArea" id="zhS-Bc-3hM"/>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ptj-me-JuQ">
@@ -44,4 +57,7 @@
             <point key="canvasLocation" x="-38" y="-125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="empty" width="160" height="160"/>
+    </resources>
 </document>
