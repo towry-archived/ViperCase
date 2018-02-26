@@ -9,15 +9,26 @@
 import UIKit
 
 final class AppDependencies {
+    var listWireframe: ListWireframe?
+    
     init() {
         self.configureDependencies()
     }
     
     func installRootViewControllerIntoWindow(window: UIWindow) {
-        
+        self.listWireframe?.presentListInterfaceFrom(window: window)
     }
     
     func configureDependencies() {
-        print("configure dependencies")
+        // Root level classes
+        let rootWireframe = RootWireframe()
+        
+        // List modules classes
+        let listWireframe = ListWireframe()
+        listWireframe.rootWireframe = rootWireframe
+        self.listWireframe = listWireframe
+        
+        // Add module classes
+        
     }
 }

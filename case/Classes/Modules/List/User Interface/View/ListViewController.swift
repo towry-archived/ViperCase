@@ -10,7 +10,7 @@ import UIKit
 
 class ListViewController: UITableViewController {
     @IBOutlet weak var noContentView: UIView?
-    var eventHandler: Optional<String> = nil
+    public var eventHandler: Optional<String> = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
