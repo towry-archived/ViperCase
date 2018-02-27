@@ -15,6 +15,11 @@
 		830F10E52038260D000516A9 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10E42038260D000516A9 /* AppDependencies.swift */; };
 		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
 		836CB05F2043D5320020376D /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05E2043D5320020376D /* ListWireframe.swift */; };
+		836CB063204426610020376D /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB062204426610020376D /* TodoItem.swift */; };
+		836CB066204427F70020376D /* NearTermDateRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB065204427F70020376D /* NearTermDateRelation.swift */; };
+		836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB0672044DFB80020376D /* CoreDataStore.swift */; };
+		836CB06B204521F40020376D /* ManagedTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB06A204521F40020376D /* ManagedTodoItem.swift */; };
+		836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 836CB06C204526A50020376D /* TODO.xcdatamodeld */; };
 		836EFEAC203EF8CE0084B86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836EFEAB203EF8CE0084B86E /* Main.storyboard */; };
 		836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB1203EFE760084B86E /* ListViewController.swift */; };
 		836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB3203EFE950084B86E /* ListViewInterface.swift */; };
@@ -43,6 +48,12 @@
 		830F10E42038260D000516A9 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		836CB05E2043D5320020376D /* ListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		836CB062204426610020376D /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		836CB065204427F70020376D /* NearTermDateRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTermDateRelation.swift; sourceTree = "<group>"; };
+		836CB0672044DFB80020376D /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		836CB06A204521F40020376D /* ManagedTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedTodoItem.swift; sourceTree = "<group>"; };
+		836CB06D204526A50020376D /* TODO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TODO.xcdatamodel; sourceTree = "<group>"; };
+		836CB070204526ED0020376D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		836EFEAB203EF8CE0084B86E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		836EFEB1203EFE760084B86E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		836EFEB3203EFE950084B86E /* ListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
@@ -72,6 +83,7 @@
 				830F10B82034055E000516A9 /* case */,
 				830F10CD2034055E000516A9 /* caseTests */,
 				830F10B72034055E000516A9 /* Products */,
+				836CB06F204526ED0020376D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +148,8 @@
 		836CB0592043D3560020376D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				836CB061204426440020376D /* Store */,
+				836CB060204426370020376D /* Model */,
 				836CB05A2043D3610020376D /* View */,
 			);
 			path = Common;
@@ -155,6 +169,41 @@
 				836CB05E2043D5320020376D /* ListWireframe.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		836CB060204426370020376D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				836CB062204426610020376D /* TodoItem.swift */,
+				836CB065204427F70020376D /* NearTermDateRelation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		836CB061204426440020376D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				836CB069204521E10020376D /* Entity */,
+				836CB0672044DFB80020376D /* CoreDataStore.swift */,
+				836CB06C204526A50020376D /* TODO.xcdatamodeld */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		836CB069204521E10020376D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				836CB06A204521F40020376D /* ManagedTodoItem.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		836CB06F204526ED0020376D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				836CB070204526ED0020376D /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		836EFEAD203EFE220084B86E /* Modules */ = {
@@ -295,12 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */,
+				836CB063204426610020376D /* TodoItem.swift in Sources */,
 				830F10E52038260D000516A9 /* AppDependencies.swift in Sources */,
 				836CB05C2043D3760020376D /* RootWireframe.swift in Sources */,
 				836CB05F2043D5320020376D /* ListWireframe.swift in Sources */,
 				836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */,
+				836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */,
 				836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */,
 				830F10DD20381BAB000516A9 /* AppDelegate.swift in Sources */,
+				836CB06B204521F40020376D /* ManagedTodoItem.swift in Sources */,
+				836CB066204427F70020376D /* NearTermDateRelation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +594,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		836CB06C204526A50020376D /* TODO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				836CB06D204526A50020376D /* TODO.xcdatamodel */,
+			);
+			currentVersion = 836CB06D204526A50020376D /* TODO.xcdatamodel */;
+			path = TODO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 830F10AE2034055E000516A9 /* Project object */;
 }
