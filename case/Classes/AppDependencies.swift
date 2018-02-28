@@ -10,6 +10,7 @@ import UIKit
 
 final class AppDependencies {
     var listWireframe: ListWireframe?
+    var dataStore: CoreDataStore?
     
     init() {
         self.configureDependencies()

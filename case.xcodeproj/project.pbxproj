@@ -20,6 +20,7 @@
 		836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB0672044DFB80020376D /* CoreDataStore.swift */; };
 		836CB06B204521F40020376D /* ManagedTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB06A204521F40020376D /* ManagedTodoItem.swift */; };
 		836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 836CB06C204526A50020376D /* TODO.xcdatamodeld */; };
+		836CB09620467FA20020376D /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB09520467FA20020376D /* ListDataManager.swift */; };
 		836EFEAC203EF8CE0084B86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836EFEAB203EF8CE0084B86E /* Main.storyboard */; };
 		836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB1203EFE760084B86E /* ListViewController.swift */; };
 		836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB3203EFE950084B86E /* ListViewInterface.swift */; };
@@ -54,6 +55,7 @@
 		836CB06A204521F40020376D /* ManagedTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedTodoItem.swift; sourceTree = "<group>"; };
 		836CB06D204526A50020376D /* TODO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TODO.xcdatamodel; sourceTree = "<group>"; };
 		836CB070204526ED0020376D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		836CB09520467FA20020376D /* ListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataManager.swift; sourceTree = "<group>"; };
 		836EFEAB203EF8CE0084B86E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		836EFEB1203EFE760084B86E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		836EFEB3203EFE950084B86E /* ListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
@@ -206,6 +208,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		836CB09320467F750020376D /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				836CB09420467F8C0020376D /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		836CB09420467F8C0020376D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				836CB09520467FA20020376D /* ListDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		836EFEAD203EFE220084B86E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +235,7 @@
 		836EFEAE203EFE2E0084B86E /* List */ = {
 			isa = PBXGroup;
 			children = (
+				836CB09320467F750020376D /* Application Logic */,
 				836EFEAF203EFE3E0084B86E /* User Interface */,
 			);
 			path = List;
@@ -345,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */,
+				836CB09620467FA20020376D /* ListDataManager.swift in Sources */,
 				836CB063204426610020376D /* TodoItem.swift in Sources */,
 				830F10E52038260D000516A9 /* AppDependencies.swift in Sources */,
 				836CB05C2043D3760020376D /* RootWireframe.swift in Sources */,
