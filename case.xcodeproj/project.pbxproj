@@ -13,6 +13,7 @@
 		830F10E220381D9D000516A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C22034055E000516A9 /* LaunchScreen.storyboard */; };
 		830F10E320381DA3000516A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C02034055E000516A9 /* Assets.xcassets */; };
 		830F10E52038260D000516A9 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10E42038260D000516A9 /* AppDependencies.swift */; };
+		8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */; };
 		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
 		836CB05F2043D5320020376D /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05E2043D5320020376D /* ListWireframe.swift */; };
 		836CB063204426610020376D /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB062204426610020376D /* TodoItem.swift */; };
@@ -47,6 +48,7 @@
 		830F10DB20381BAB000516A9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		830F10E020381CC9000516A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		830F10E42038260D000516A9 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+CalendarAdditions.swift"; sourceTree = "<group>"; };
 		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		836CB05E2043D5320020376D /* ListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		836CB062204426610020376D /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
@@ -147,9 +149,18 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8357DA5420481DA600B4C29A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		836CB0592043D3560020376D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8357DA5420481DA600B4C29A /* Extension */,
 				836CB061204426440020376D /* Store */,
 				836CB060204426370020376D /* Model */,
 				836CB05A2043D3610020376D /* View */,
@@ -371,6 +382,7 @@
 				836CB05F2043D5320020376D /* ListWireframe.swift in Sources */,
 				836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */,
 				836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */,
+				8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */,
 				836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */,
 				830F10DD20381BAB000516A9 /* AppDelegate.swift in Sources */,
 				836CB06B204521F40020376D /* ManagedTodoItem.swift in Sources */,

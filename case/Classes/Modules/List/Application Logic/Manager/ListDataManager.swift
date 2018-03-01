@@ -18,7 +18,8 @@ class ListDataManager {
     }
     
     func todoItemsBetweenStartDate(startDate: Date, endDate: Date, completionBlock: (_ todoItems: Array<Any>) -> ()) {
-        let cal = NSCalendar.autoupdatingCurrent
+        let cal = Calendar.autoupdatingCurrent
+        let predicate = NSPredicate(format: "(date >= %@) AND (date <= %@")
         // TODO
     }
     
