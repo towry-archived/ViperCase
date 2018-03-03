@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		830F10CF2034055E000516A9 /* caseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10CE2034055E000516A9 /* caseTests.swift */; };
+		830F10CF2034055E000516A9 /* ViperCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10CE2034055E000516A9 /* ViperCase.swift */; };
 		830F10DD20381BAB000516A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10DB20381BAB000516A9 /* AppDelegate.swift */; };
 		830F10E120381CC9000516A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830F10E020381CC9000516A9 /* Default-568h@2x.png */; };
 		830F10E220381D9D000516A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C22034055E000516A9 /* LaunchScreen.storyboard */; };
@@ -39,12 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		830F10B62034055E000516A9 /* case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = case.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830F10B62034055E000516A9 /* ViperCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		830F10C02034055E000516A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830F10C32034055E000516A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		830F10C52034055E000516A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		830F10CA2034055E000516A9 /* caseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		830F10CE2034055E000516A9 /* caseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caseTests.swift; sourceTree = "<group>"; };
+		830F10CA2034055E000516A9 /* ViperCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		830F10CE2034055E000516A9 /* ViperCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperCase.swift; sourceTree = "<group>"; };
 		830F10D02034055E000516A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830F10DB20381BAB000516A9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		830F10E020381CC9000516A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -86,8 +86,8 @@
 		830F10AD2034055E000516A9 = {
 			isa = PBXGroup;
 			children = (
-				830F10B82034055E000516A9 /* case */,
-				830F10CD2034055E000516A9 /* caseTests */,
+				830F10B82034055E000516A9 /* ViperCase */,
+				830F10CD2034055E000516A9 /* ViperCaseTests */,
 				830F10B72034055E000516A9 /* Products */,
 				836CB06F204526ED0020376D /* Frameworks */,
 			);
@@ -96,29 +96,29 @@
 		830F10B72034055E000516A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				830F10B62034055E000516A9 /* case.app */,
-				830F10CA2034055E000516A9 /* caseTests.xctest */,
+				830F10B62034055E000516A9 /* ViperCase.app */,
+				830F10CA2034055E000516A9 /* ViperCaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		830F10B82034055E000516A9 /* case */ = {
+		830F10B82034055E000516A9 /* ViperCase */ = {
 			isa = PBXGroup;
 			children = (
 				830F10DF20381C86000516A9 /* Supporting Files */,
 				830F10DA20381B6E000516A9 /* Resources */,
 				830F10D920381B21000516A9 /* Classes */,
 			);
-			path = case;
+			path = ViperCase;
 			sourceTree = "<group>";
 		};
-		830F10CD2034055E000516A9 /* caseTests */ = {
+		830F10CD2034055E000516A9 /* ViperCaseTests */ = {
 			isa = PBXGroup;
 			children = (
-				830F10CE2034055E000516A9 /* caseTests.swift */,
+				830F10CE2034055E000516A9 /* ViperCase.swift */,
 				830F10D02034055E000516A9 /* Info.plist */,
 			);
-			path = caseTests;
+			path = ViperCaseTests;
 			sourceTree = "<group>";
 		};
 		830F10D920381B21000516A9 /* Classes */ = {
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		830F10B52034055E000516A9 /* case */ = {
+		830F10B52034055E000516A9 /* ViperCase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 830F10D32034055E000516A9 /* Build configuration list for PBXNativeTarget "case" */;
+			buildConfigurationList = 830F10D32034055E000516A9 /* Build configuration list for PBXNativeTarget "ViperCase" */;
 			buildPhases = (
 				830F10B22034055E000516A9 /* Sources */,
 				830F10B32034055E000516A9 /* Frameworks */,
@@ -288,14 +288,14 @@
 			);
 			dependencies = (
 			);
-			name = case;
+			name = ViperCase;
 			productName = case;
-			productReference = 830F10B62034055E000516A9 /* case.app */;
+			productReference = 830F10B62034055E000516A9 /* ViperCase.app */;
 			productType = "com.apple.product-type.application";
 		};
-		830F10C92034055E000516A9 /* caseTests */ = {
+		830F10C92034055E000516A9 /* ViperCaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 830F10D62034055E000516A9 /* Build configuration list for PBXNativeTarget "caseTests" */;
+			buildConfigurationList = 830F10D62034055E000516A9 /* Build configuration list for PBXNativeTarget "ViperCaseTests" */;
 			buildPhases = (
 				830F10C62034055E000516A9 /* Sources */,
 				830F10C72034055E000516A9 /* Frameworks */,
@@ -306,9 +306,9 @@
 			dependencies = (
 				830F10CC2034055E000516A9 /* PBXTargetDependency */,
 			);
-			name = caseTests;
+			name = ViperCaseTests;
 			productName = caseTests;
-			productReference = 830F10CA2034055E000516A9 /* caseTests.xctest */;
+			productReference = 830F10CA2034055E000516A9 /* ViperCaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -332,7 +332,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 830F10B12034055E000516A9 /* Build configuration list for PBXProject "case" */;
+			buildConfigurationList = 830F10B12034055E000516A9 /* Build configuration list for PBXProject "ViperCase" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -345,8 +345,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				830F10B52034055E000516A9 /* case */,
-				830F10C92034055E000516A9 /* caseTests */,
+				830F10B52034055E000516A9 /* ViperCase */,
+				830F10C92034055E000516A9 /* ViperCaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -398,7 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830F10CF2034055E000516A9 /* caseTests.swift in Sources */,
+				830F10CF2034055E000516A9 /* ViperCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +407,7 @@
 /* Begin PBXTargetDependency section */
 		830F10CC2034055E000516A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 830F10B52034055E000516A9 /* case */;
+			target = 830F10B52034055E000516A9 /* ViperCase */;
 			targetProxy = 830F10CB2034055E000516A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -538,9 +538,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S95K97BRD;
-				INFOPLIST_FILE = "case/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "ViperCase/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.towry.case;
+				PRODUCT_BUNDLE_IDENTIFIER = me.towry.ViperCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -555,9 +555,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S95K97BRD;
-				INFOPLIST_FILE = "case/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "ViperCase/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.towry.case;
+				PRODUCT_BUNDLE_IDENTIFIER = me.towry.ViperCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -572,13 +572,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S95K97BRD;
-				INFOPLIST_FILE = caseTests/Info.plist;
+				INFOPLIST_FILE = ViperCaseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.towry.caseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/case.app/case";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperCase.app/ViperCase";
 			};
 			name = Debug;
 		};
@@ -589,20 +589,20 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S95K97BRD;
-				INFOPLIST_FILE = caseTests/Info.plist;
+				INFOPLIST_FILE = ViperCaseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.towry.caseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/case.app/case";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperCase.app/ViperCase";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		830F10B12034055E000516A9 /* Build configuration list for PBXProject "case" */ = {
+		830F10B12034055E000516A9 /* Build configuration list for PBXProject "ViperCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				830F10D12034055E000516A9 /* Debug */,
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		830F10D32034055E000516A9 /* Build configuration list for PBXNativeTarget "case" */ = {
+		830F10D32034055E000516A9 /* Build configuration list for PBXNativeTarget "ViperCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				830F10D42034055E000516A9 /* Debug */,
@@ -620,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		830F10D62034055E000516A9 /* Build configuration list for PBXNativeTarget "caseTests" */ = {
+		830F10D62034055E000516A9 /* Build configuration list for PBXNativeTarget "ViperCaseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				830F10D72034055E000516A9 /* Debug */,

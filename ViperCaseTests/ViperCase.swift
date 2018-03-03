@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import case
+@testable import ViperCase
 
 class caseTests: XCTestCase {
     
