@@ -7,10 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		830F10BA2034055E000516A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10B92034055E000516A9 /* AppDelegate.swift */; };
-		830F10C12034055E000516A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C02034055E000516A9 /* Assets.xcassets */; };
-		830F10C42034055E000516A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C22034055E000516A9 /* LaunchScreen.storyboard */; };
 		830F10CF2034055E000516A9 /* caseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10CE2034055E000516A9 /* caseTests.swift */; };
+		830F10DD20381BAB000516A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10DB20381BAB000516A9 /* AppDelegate.swift */; };
+		830F10E120381CC9000516A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 830F10E020381CC9000516A9 /* Default-568h@2x.png */; };
+		830F10E220381D9D000516A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C22034055E000516A9 /* LaunchScreen.storyboard */; };
+		830F10E320381DA3000516A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C02034055E000516A9 /* Assets.xcassets */; };
+		830F10E52038260D000516A9 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10E42038260D000516A9 /* AppDependencies.swift */; };
+		8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */; };
+		8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA582048DDCE00B4C29A /* Array+HOM.swift */; };
+		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
+		836CB05F2043D5320020376D /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05E2043D5320020376D /* ListWireframe.swift */; };
+		836CB063204426610020376D /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB062204426610020376D /* TodoItem.swift */; };
+		836CB066204427F70020376D /* NearTermDateRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB065204427F70020376D /* NearTermDateRelation.swift */; };
+		836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB0672044DFB80020376D /* CoreDataStore.swift */; };
+		836CB06B204521F40020376D /* ManagedTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB06A204521F40020376D /* ManagedTodoItem.swift */; };
+		836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 836CB06C204526A50020376D /* TODO.xcdatamodeld */; };
+		836CB09620467FA20020376D /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB09520467FA20020376D /* ListDataManager.swift */; };
+		836EFEAC203EF8CE0084B86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836EFEAB203EF8CE0084B86E /* Main.storyboard */; };
+		836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB1203EFE760084B86E /* ListViewController.swift */; };
+		836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB3203EFE950084B86E /* ListViewInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,13 +40,29 @@
 
 /* Begin PBXFileReference section */
 		830F10B62034055E000516A9 /* case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = case.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		830F10B92034055E000516A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		830F10C02034055E000516A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830F10C32034055E000516A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		830F10C52034055E000516A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830F10CA2034055E000516A9 /* caseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830F10CE2034055E000516A9 /* caseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caseTests.swift; sourceTree = "<group>"; };
 		830F10D02034055E000516A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830F10DB20381BAB000516A9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		830F10E020381CC9000516A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		830F10E42038260D000516A9 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+CalendarAdditions.swift"; sourceTree = "<group>"; };
+		8357DA582048DDCE00B4C29A /* Array+HOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM.swift"; sourceTree = "<group>"; };
+		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		836CB05E2043D5320020376D /* ListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		836CB062204426610020376D /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		836CB065204427F70020376D /* NearTermDateRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearTermDateRelation.swift; sourceTree = "<group>"; };
+		836CB0672044DFB80020376D /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		836CB06A204521F40020376D /* ManagedTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedTodoItem.swift; sourceTree = "<group>"; };
+		836CB06D204526A50020376D /* TODO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TODO.xcdatamodel; sourceTree = "<group>"; };
+		836CB070204526ED0020376D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		836CB09520467FA20020376D /* ListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataManager.swift; sourceTree = "<group>"; };
+		836EFEAB203EF8CE0084B86E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		836EFEB1203EFE760084B86E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		836EFEB3203EFE950084B86E /* ListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,7 @@
 				830F10B82034055E000516A9 /* case */,
 				830F10CD2034055E000516A9 /* caseTests */,
 				830F10B72034055E000516A9 /* Products */,
+				836CB06F204526ED0020376D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,10 +105,9 @@
 		830F10B82034055E000516A9 /* case */ = {
 			isa = PBXGroup;
 			children = (
-				830F10B92034055E000516A9 /* AppDelegate.swift */,
-				830F10C02034055E000516A9 /* Assets.xcassets */,
-				830F10C22034055E000516A9 /* LaunchScreen.storyboard */,
-				830F10C52034055E000516A9 /* Info.plist */,
+				830F10DF20381C86000516A9 /* Supporting Files */,
+				830F10DA20381B6E000516A9 /* Resources */,
+				830F10D920381B21000516A9 /* Classes */,
 			);
 			path = case;
 			sourceTree = "<group>";
@@ -88,6 +119,158 @@
 				830F10D02034055E000516A9 /* Info.plist */,
 			);
 			path = caseTests;
+			sourceTree = "<group>";
+		};
+		830F10D920381B21000516A9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				836CB0592043D3560020376D /* Common */,
+				836EFEAD203EFE220084B86E /* Modules */,
+				830F10DB20381BAB000516A9 /* AppDelegate.swift */,
+				830F10E42038260D000516A9 /* AppDependencies.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		830F10DA20381B6E000516A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				830F10E020381CC9000516A9 /* Default-568h@2x.png */,
+				830F10C22034055E000516A9 /* LaunchScreen.storyboard */,
+				830F10C02034055E000516A9 /* Assets.xcassets */,
+				836EFEAB203EF8CE0084B86E /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		830F10DF20381C86000516A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				830F10C52034055E000516A9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8357DA5420481DA600B4C29A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */,
+				8357DA582048DDCE00B4C29A /* Array+HOM.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		836CB0592043D3560020376D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8357DA5420481DA600B4C29A /* Extension */,
+				836CB061204426440020376D /* Store */,
+				836CB060204426370020376D /* Model */,
+				836CB05A2043D3610020376D /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		836CB05A2043D3610020376D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				836CB05B2043D3760020376D /* RootWireframe.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		836CB05D2043D5220020376D /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				836CB05E2043D5320020376D /* ListWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		836CB060204426370020376D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				836CB062204426610020376D /* TodoItem.swift */,
+				836CB065204427F70020376D /* NearTermDateRelation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		836CB061204426440020376D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				836CB069204521E10020376D /* Entity */,
+				836CB0672044DFB80020376D /* CoreDataStore.swift */,
+				836CB06C204526A50020376D /* TODO.xcdatamodeld */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		836CB069204521E10020376D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				836CB06A204521F40020376D /* ManagedTodoItem.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		836CB06F204526ED0020376D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				836CB070204526ED0020376D /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		836CB09320467F750020376D /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				836CB09420467F8C0020376D /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		836CB09420467F8C0020376D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				836CB09520467FA20020376D /* ListDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		836EFEAD203EFE220084B86E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				836EFEAE203EFE2E0084B86E /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		836EFEAE203EFE2E0084B86E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				836CB09320467F750020376D /* Application Logic */,
+				836EFEAF203EFE3E0084B86E /* User Interface */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		836EFEAF203EFE3E0084B86E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				836CB05D2043D5220020376D /* Wireframe */,
+				836EFEB0203EFE470084B86E /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		836EFEB0203EFE470084B86E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				836EFEB1203EFE760084B86E /* ListViewController.swift */,
+				836EFEB3203EFE950084B86E /* ListViewInterface.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +356,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830F10C42034055E000516A9 /* LaunchScreen.storyboard in Resources */,
-				830F10C12034055E000516A9 /* Assets.xcassets in Resources */,
+				830F10E320381DA3000516A9 /* Assets.xcassets in Resources */,
+				830F10E220381D9D000516A9 /* LaunchScreen.storyboard in Resources */,
+				830F10E120381CC9000516A9 /* Default-568h@2x.png in Resources */,
+				836EFEAC203EF8CE0084B86E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +377,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830F10BA2034055E000516A9 /* AppDelegate.swift in Sources */,
+				836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */,
+				836CB09620467FA20020376D /* ListDataManager.swift in Sources */,
+				836CB063204426610020376D /* TodoItem.swift in Sources */,
+				830F10E52038260D000516A9 /* AppDependencies.swift in Sources */,
+				836CB05C2043D3760020376D /* RootWireframe.swift in Sources */,
+				836CB05F2043D5320020376D /* ListWireframe.swift in Sources */,
+				836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */,
+				836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */,
+				8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */,
+				8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */,
+				836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */,
+				830F10DD20381BAB000516A9 /* AppDelegate.swift in Sources */,
+				836CB06B204521F40020376D /* ManagedTodoItem.swift in Sources */,
+				836CB066204427F70020376D /* NearTermDateRelation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,12 +535,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S95K97BRD;
-				INFOPLIST_FILE = case/Info.plist;
+				INFOPLIST_FILE = "case/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.towry.case;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,12 +552,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S95K97BRD;
-				INFOPLIST_FILE = case/Info.plist;
+				INFOPLIST_FILE = "case/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.towry.case;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -428,6 +630,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		836CB06C204526A50020376D /* TODO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				836CB06D204526A50020376D /* TODO.xcdatamodel */,
+			);
+			currentVersion = 836CB06D204526A50020376D /* TODO.xcdatamodel */;
+			path = TODO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 830F10AE2034055E000516A9 /* Project object */;
 }
