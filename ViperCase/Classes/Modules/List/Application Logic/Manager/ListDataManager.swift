@@ -17,20 +17,22 @@ class ListDataManager {
         
     }
     
-    func todoItemsBetweenStartDate(startDate: Date, endDate: Date, completionBlock: ((_ todoItems: Array<Any>) -> ())? = nil) {
+    func todoItemsBetweenStartDate(startDate: Date, endDate: Date, completionBlock: ((_ todoItems: Array<TodoItem>) -> ())? = nil) {
         let cal = Calendar.autoupdatingCurrent
         let predicate = NSPredicate(format: "(date >= %@) AND (date <= %@)", [cal.dateForBeginningOfDay(date: startDate), cal.dateForEndOfDay(date: endDate)])
-        let sortDescriptors: Array<Any> = []
+        let sortDescriptors: Array<ManagedTodoItem> = []
         
-        self.dataStore?.fetchEntriesWithPredicate(predicate: predicate, sortDescriptors: sortDescriptors) { (entries: Array<Any>) -> () in
+        self.dataStore?.fetchEntriesWithPredicate(predicate: predicate, sortDescriptors: sortDescriptors) { (entries: Array<ManagedTodoItem>) -> Void in
             if let completionBlock = completionBlock {
                 completionBlock(self.todoItemsFromDataStoreEntries(entries: entries))
             }
         }
     }
     
-    private func todoItemsFromDataStoreEntries(entries: Array<Any>) -> Array<Any> {
+    private func todoItemsFromDataStoreEntries(entries: Array<ManagedTodoItem>) -> Array<TodoItem> {
 //        return entries.block
-        return []
+        return entries.arrayFromObjectsCollectedWithBlock { item in
+            return TodoItem.todoItemWithDueDate(item.date!, name: item.name!)
+        }
     }
 }

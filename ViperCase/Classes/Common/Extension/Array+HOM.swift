@@ -11,7 +11,7 @@ import Foundation
 extension Array {
     typealias T = Element
     
-    func arrayFromObjectsCollectedWithBlock(_ block: (_ object: T) -> T) -> Array<T> {
+    func arrayFromObjectsCollectedWithBlock<C>(_ block: (_ object: T) -> C) -> Array<C> {
         return self.map {
             return block($0)
         }

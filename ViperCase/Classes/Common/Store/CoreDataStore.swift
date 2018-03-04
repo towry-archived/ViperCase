@@ -9,13 +9,13 @@
 import Foundation
 import CoreData
 
-typealias DataStoreFetchCompletionBlock = (_ results : Array<Any>)  -> Void
+typealias DataStoreFetchCompletionBlock<T> = (_ results : Array<T>)  -> Void
 
 class CoreDataStore {
     var persistentContainer: NSPersistentContainer
     
     init(completeBlock: @escaping () -> ()) {
-        let container = NSPersistentContainer(name: "case")
+        let container = NSPersistentContainer(name: "TODO")
         container.loadPersistentStores(completionHandler: {(description, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
@@ -39,9 +39,9 @@ class CoreDataStore {
         }
     }
     
-    func fetchEntriesWithPredicate(predicate: NSPredicate,
-                                   sortDescriptors: Array<Any>,
-                                   completionBlock: DataStoreFetchCompletionBlock) {
+    func fetchEntriesWithPredicate<T>(predicate: NSPredicate,
+                                   sortDescriptors: Array<T>,
+                                   completionBlock: DataStoreFetchCompletionBlock<T>) {
         
     }
     

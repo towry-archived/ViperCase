@@ -8,26 +8,49 @@
 
 import UIKit
 
-class ListViewController: UITableViewController {
+let ListEntryCellIdentifier = "ListEntryCell"
+
+class ListViewController:  UITableViewController  {
     @IBOutlet weak var noContentView: UIView?
-    public var eventHandler: Optional<String> = nil
+    public var eventHandler: ListModuleInterface?
+//    fileprivate var data:
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        self.view = self.noContentView
+        self.configureView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func configureView() {
+        self.navigationItem.title = "VIPER TODO"
+        let addBtn = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAddButton(sender:)))
+        self.navigationItem.rightBarButtonItem = addBtn
+    }
+    
+    @objc func didTapAddButton(sender: Any) {
+        print("OK")
+    }
 }
 
+// MARK: - UITableViewDelegate and DataSource method
+
+extension ListViewController {
+    func numberOfSections(in tableView: UITableView) -> Int {
+//        return self.data
+    }
+}
+
+// MARK: - Extension ListViewInterface
+
 extension ListViewController: ListViewInterface {
+    
     func showNoContentMessage() {
-        // pass
+        self.view = self.noContentView
     }
     
     func showUpcomingDisplayData(_ data: String) {
@@ -35,6 +58,6 @@ extension ListViewController: ListViewInterface {
     }
     
     func reloadEntries() {
-        // pass
+        self.tableView.reloadData()
     }
 }

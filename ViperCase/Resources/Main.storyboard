@@ -17,7 +17,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UOh-m7-d5c">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.22782272100448608" green="0.18545535206794739" blue="0.24956405162811279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.98431372549999996" green="0.45935649000000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.99195677042007446" green="0.99622899293899536" blue="0.99192315340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d24-yj-agH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -27,7 +30,7 @@
         <!--List View Controller-->
         <scene sceneID="dI2-ud-kbY">
             <objects>
-                <viewController storyboardIdentifier="ListViewController" id="OSK-k8-oIZ" customClass="ListViewController" customModule="case" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" id="OSK-k8-oIZ" customClass="ListViewController" customModule="ViperCase" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <outlet property="noContentView" destination="Gx0-tc-oto" id="wm4-oo-8Bs"/>
                     </connections>

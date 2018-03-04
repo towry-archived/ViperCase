@@ -13,6 +13,8 @@
 		830F10E220381D9D000516A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C22034055E000516A9 /* LaunchScreen.storyboard */; };
 		830F10E320381DA3000516A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830F10C02034055E000516A9 /* Assets.xcassets */; };
 		830F10E52038260D000516A9 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10E42038260D000516A9 /* AppDependencies.swift */; };
+		8311DD10204BC02300397BB4 /* ListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311DD0F204BC02300397BB4 /* ListModuleInterface.swift */; };
+		8311DD12204BFB0B00397BB4 /* UpcomingDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311DD11204BFB0B00397BB4 /* UpcomingDisplayData.swift */; };
 		8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */; };
 		8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA582048DDCE00B4C29A /* Array+HOM.swift */; };
 		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
@@ -26,6 +28,7 @@
 		836EFEAC203EF8CE0084B86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836EFEAB203EF8CE0084B86E /* Main.storyboard */; };
 		836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB1203EFE760084B86E /* ListViewController.swift */; };
 		836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB3203EFE950084B86E /* ListViewInterface.swift */; };
+		83D547FC204AE8A7005D55B2 /* Array+HOM-Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D547FB204AE8A7005D55B2 /* Array+HOM-Case.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		830F10DB20381BAB000516A9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		830F10E020381CC9000516A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		830F10E42038260D000516A9 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		8311DD0F204BC02300397BB4 /* ListModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModuleInterface.swift; sourceTree = "<group>"; };
+		8311DD11204BFB0B00397BB4 /* UpcomingDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDisplayData.swift; sourceTree = "<group>"; };
 		8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+CalendarAdditions.swift"; sourceTree = "<group>"; };
 		8357DA582048DDCE00B4C29A /* Array+HOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM.swift"; sourceTree = "<group>"; };
 		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 		836EFEAB203EF8CE0084B86E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		836EFEB1203EFE760084B86E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		836EFEB3203EFE950084B86E /* ListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
+		83D547FB204AE8A7005D55B2 /* Array+HOM-Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM-Case.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 			children = (
 				830F10CE2034055E000516A9 /* ViperCase.swift */,
 				830F10D02034055E000516A9 /* Info.plist */,
+				83D547FB204AE8A7005D55B2 /* Array+HOM-Case.swift */,
 			);
 			path = ViperCaseTests;
 			sourceTree = "<group>";
@@ -151,6 +158,13 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8311DD13204C011F00397BB4 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		8357DA5420481DA600B4C29A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +177,7 @@
 		836CB0592043D3560020376D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8311DD13204C011F00397BB4 /* Interface */,
 				8357DA5420481DA600B4C29A /* Extension */,
 				836CB061204426440020376D /* Store */,
 				836CB060204426370020376D /* Model */,
@@ -225,6 +240,7 @@
 		836CB09320467F750020376D /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
+				83D547FE204AF499005D55B2 /* Interactor */,
 				836CB09420467F8C0020376D /* Manager */,
 			);
 			path = "Application Logic";
@@ -249,6 +265,7 @@
 		836EFEAE203EFE2E0084B86E /* List */ = {
 			isa = PBXGroup;
 			children = (
+				83D547FF204AF4A4005D55B2 /* Module Interface */,
 				836CB09320467F750020376D /* Application Logic */,
 				836EFEAF203EFE3E0084B86E /* User Interface */,
 			);
@@ -258,6 +275,7 @@
 		836EFEAF203EFE3E0084B86E /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				83D547FD204AF489005D55B2 /* Prensenter */,
 				836CB05D2043D5220020376D /* Wireframe */,
 				836EFEB0203EFE470084B86E /* View */,
 			);
@@ -271,6 +289,29 @@
 				836EFEB3203EFE950084B86E /* ListViewInterface.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		83D547FD204AF489005D55B2 /* Prensenter */ = {
+			isa = PBXGroup;
+			children = (
+				8311DD11204BFB0B00397BB4 /* UpcomingDisplayData.swift */,
+			);
+			path = Prensenter;
+			sourceTree = "<group>";
+		};
+		83D547FE204AF499005D55B2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		83D547FF204AF4A4005D55B2 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8311DD0F204BC02300397BB4 /* ListModuleInterface.swift */,
+			);
+			path = "Module Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,8 +421,10 @@
 				836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */,
 				836CB09620467FA20020376D /* ListDataManager.swift in Sources */,
 				836CB063204426610020376D /* TodoItem.swift in Sources */,
+				8311DD10204BC02300397BB4 /* ListModuleInterface.swift in Sources */,
 				830F10E52038260D000516A9 /* AppDependencies.swift in Sources */,
 				836CB05C2043D3760020376D /* RootWireframe.swift in Sources */,
+				8311DD12204BFB0B00397BB4 /* UpcomingDisplayData.swift in Sources */,
 				836CB05F2043D5320020376D /* ListWireframe.swift in Sources */,
 				836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */,
 				836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */,
@@ -398,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D547FC204AE8A7005D55B2 /* Array+HOM-Case.swift in Sources */,
 				830F10CF2034055E000516A9 /* ViperCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
