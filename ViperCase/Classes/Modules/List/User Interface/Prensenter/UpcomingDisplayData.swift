@@ -8,12 +8,15 @@
 
 import Foundation
 
-class UpcomingDisplayData<T> where T: Equatable {
-    private(set) var sections: Array<T>?
+class UpcomingDisplayData {
+    var sections: [UpcomingDisplaySection]
     
-    static func upcomingDisplayDataWithSections(sections: Array<T>) -> UpcomingDisplayData {
-        let data = UpcomingDisplayData()
-        data.sections = sections
+    init(sections: [UpcomingDisplaySection]) {
+        self.sections = sections
+    }
+    
+    static func upcomingDisplayDataWithSections(sections: [UpcomingDisplaySection]) -> UpcomingDisplayData {
+        let data = UpcomingDisplayData(sections: sections)
         
         return data
     }
@@ -23,6 +26,6 @@ class UpcomingDisplayData<T> where T: Equatable {
             return false
         }
         
-        return self.sections! == data!.sections!
+        return self.sections == data!.sections
     }
 }

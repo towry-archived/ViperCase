@@ -11,6 +11,6 @@ import Foundation
 // Describe the List view behavior.
 protocol ListViewInterface {
     func showNoContentMessage();
-    func showUpcomingDisplayData(_ data: String);
+    func showUpcomingDisplayData(_ data: UpcomingDisplayData);
     func reloadEntries();
 }

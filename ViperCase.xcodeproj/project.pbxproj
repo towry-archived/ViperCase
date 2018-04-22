@@ -15,6 +15,11 @@
 		830F10E52038260D000516A9 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F10E42038260D000516A9 /* AppDependencies.swift */; };
 		8311DD10204BC02300397BB4 /* ListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311DD0F204BC02300397BB4 /* ListModuleInterface.swift */; };
 		8311DD12204BFB0B00397BB4 /* UpcomingDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311DD11204BFB0B00397BB4 /* UpcomingDisplayData.swift */; };
+		8336AB8C208B25D500C28A00 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB8B208B25D500C28A00 /* ListPresenter.swift */; };
+		8336AB8E208B268600C28A00 /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB8D208B268600C28A00 /* ListInteractorIO.swift */; };
+		8336AB90208B45A300C28A00 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB8F208B45A300C28A00 /* ListInteractor.swift */; };
+		8336AB94208CA0F200C28A00 /* UpcomingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB93208CA0F200C28A00 /* UpcomingItem.swift */; };
+		8336AB96208CA10E00C28A00 /* UpcomingItemInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB95208CA10E00C28A00 /* UpcomingItemInterface.swift */; };
 		8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */; };
 		8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA582048DDCE00B4C29A /* Array+HOM.swift */; };
 		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
@@ -28,6 +33,8 @@
 		836EFEAC203EF8CE0084B86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836EFEAB203EF8CE0084B86E /* Main.storyboard */; };
 		836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB1203EFE760084B86E /* ListViewController.swift */; };
 		836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836EFEB3203EFE950084B86E /* ListViewInterface.swift */; };
+		8399E943204D68A000AF7C2A /* UpcomingDisplaySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399E942204D68A000AF7C2A /* UpcomingDisplaySection.swift */; };
+		8399E945204E215E00AF7C2A /* UpcomingDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399E944204E215E00AF7C2A /* UpcomingDisplayItem.swift */; };
 		83D547FC204AE8A7005D55B2 /* Array+HOM-Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D547FB204AE8A7005D55B2 /* Array+HOM-Case.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +61,11 @@
 		830F10E42038260D000516A9 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		8311DD0F204BC02300397BB4 /* ListModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModuleInterface.swift; sourceTree = "<group>"; };
 		8311DD11204BFB0B00397BB4 /* UpcomingDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDisplayData.swift; sourceTree = "<group>"; };
+		8336AB8B208B25D500C28A00 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		8336AB8D208B268600C28A00 /* ListInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
+		8336AB8F208B45A300C28A00 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		8336AB93208CA0F200C28A00 /* UpcomingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingItem.swift; sourceTree = "<group>"; };
+		8336AB95208CA10E00C28A00 /* UpcomingItemInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingItemInterface.swift; sourceTree = "<group>"; };
 		8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+CalendarAdditions.swift"; sourceTree = "<group>"; };
 		8357DA582048DDCE00B4C29A /* Array+HOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM.swift"; sourceTree = "<group>"; };
 		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
@@ -68,6 +80,8 @@
 		836EFEAB203EF8CE0084B86E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		836EFEB1203EFE760084B86E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		836EFEB3203EFE950084B86E /* ListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
+		8399E942204D68A000AF7C2A /* UpcomingDisplaySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDisplaySection.swift; sourceTree = "<group>"; };
+		8399E944204E215E00AF7C2A /* UpcomingDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDisplayItem.swift; sourceTree = "<group>"; };
 		83D547FB204AE8A7005D55B2 /* Array+HOM-Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM-Case.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -295,6 +309,9 @@
 			isa = PBXGroup;
 			children = (
 				8311DD11204BFB0B00397BB4 /* UpcomingDisplayData.swift */,
+				8399E942204D68A000AF7C2A /* UpcomingDisplaySection.swift */,
+				8399E944204E215E00AF7C2A /* UpcomingDisplayItem.swift */,
+				8336AB8B208B25D500C28A00 /* ListPresenter.swift */,
 			);
 			path = Prensenter;
 			sourceTree = "<group>";
@@ -302,6 +319,10 @@
 		83D547FE204AF499005D55B2 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				8336AB8D208B268600C28A00 /* ListInteractorIO.swift */,
+				8336AB8F208B45A300C28A00 /* ListInteractor.swift */,
+				8336AB93208CA0F200C28A00 /* UpcomingItem.swift */,
+				8336AB95208CA10E00C28A00 /* UpcomingItemInterface.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -359,7 +380,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = towry;
 				TargetAttributes = {
 					830F10B52034055E000516A9 = {
@@ -419,18 +440,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */,
+				8336AB96208CA10E00C28A00 /* UpcomingItemInterface.swift in Sources */,
 				836CB09620467FA20020376D /* ListDataManager.swift in Sources */,
 				836CB063204426610020376D /* TodoItem.swift in Sources */,
+				8336AB90208B45A300C28A00 /* ListInteractor.swift in Sources */,
 				8311DD10204BC02300397BB4 /* ListModuleInterface.swift in Sources */,
 				830F10E52038260D000516A9 /* AppDependencies.swift in Sources */,
+				8336AB94208CA0F200C28A00 /* UpcomingItem.swift in Sources */,
 				836CB05C2043D3760020376D /* RootWireframe.swift in Sources */,
 				8311DD12204BFB0B00397BB4 /* UpcomingDisplayData.swift in Sources */,
 				836CB05F2043D5320020376D /* ListWireframe.swift in Sources */,
 				836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */,
+				8336AB8C208B25D500C28A00 /* ListPresenter.swift in Sources */,
+				8399E943204D68A000AF7C2A /* UpcomingDisplaySection.swift in Sources */,
 				836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */,
+				8399E945204E215E00AF7C2A /* UpcomingDisplayItem.swift in Sources */,
 				8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */,
 				8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */,
 				836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */,
+				8336AB8E208B268600C28A00 /* ListInteractorIO.swift in Sources */,
 				830F10DD20381BAB000516A9 /* AppDelegate.swift in Sources */,
 				836CB06B204521F40020376D /* ManagedTodoItem.swift in Sources */,
 				836CB066204427F70020376D /* NearTermDateRelation.swift in Sources */,
@@ -482,6 +510,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -489,6 +518,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -539,6 +569,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -546,6 +577,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
