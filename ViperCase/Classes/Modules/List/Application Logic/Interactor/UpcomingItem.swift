@@ -9,17 +9,10 @@
 import Foundation
 
 
-class UpcomingItem: UpcomingItemInterface {
+class UpcomingItem {
     var dateRelation: NearTermDateRelation
     var dueDate: Date
     var title: String
-    
-    public var description: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .none
-        return "\(self.dateRelation) \(dateFormatter.string(from: self.dueDate)) \(self.title)"
-    }
     
     init(dateRelation: NearTermDateRelation, dueDate: Date, title: String) {
         self.dateRelation = dateRelation
@@ -35,5 +28,14 @@ class UpcomingItem: UpcomingItemInterface {
     
     static func == (lhs: UpcomingItem, rhs: UpcomingItem) -> Bool {
         return lhs.title == rhs.title && lhs.dateRelation == rhs.dateRelation && lhs.dueDate == rhs.dueDate
+    }
+}
+
+extension UpcomingItem: CustomStringConvertible {
+    public var description: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        return "\(self.dateRelation) \(dateFormatter.string(from: self.dueDate)) \(self.title)"
     }
 }

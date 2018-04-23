@@ -19,7 +19,7 @@
 		8336AB8E208B268600C28A00 /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB8D208B268600C28A00 /* ListInteractorIO.swift */; };
 		8336AB90208B45A300C28A00 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB8F208B45A300C28A00 /* ListInteractor.swift */; };
 		8336AB94208CA0F200C28A00 /* UpcomingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB93208CA0F200C28A00 /* UpcomingItem.swift */; };
-		8336AB96208CA10E00C28A00 /* UpcomingItemInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB95208CA10E00C28A00 /* UpcomingItemInterface.swift */; };
+		8336AB98208D826F00C28A00 /* UpcomingDisplayDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336AB97208D826F00C28A00 /* UpcomingDisplayDataCollector.swift */; };
 		8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */; };
 		8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA582048DDCE00B4C29A /* Array+HOM.swift */; };
 		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
@@ -65,7 +65,7 @@
 		8336AB8D208B268600C28A00 /* ListInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
 		8336AB8F208B45A300C28A00 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		8336AB93208CA0F200C28A00 /* UpcomingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingItem.swift; sourceTree = "<group>"; };
-		8336AB95208CA10E00C28A00 /* UpcomingItemInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingItemInterface.swift; sourceTree = "<group>"; };
+		8336AB97208D826F00C28A00 /* UpcomingDisplayDataCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDisplayDataCollector.swift; sourceTree = "<group>"; };
 		8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+CalendarAdditions.swift"; sourceTree = "<group>"; };
 		8357DA582048DDCE00B4C29A /* Array+HOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM.swift"; sourceTree = "<group>"; };
 		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
@@ -312,6 +312,7 @@
 				8399E942204D68A000AF7C2A /* UpcomingDisplaySection.swift */,
 				8399E944204E215E00AF7C2A /* UpcomingDisplayItem.swift */,
 				8336AB8B208B25D500C28A00 /* ListPresenter.swift */,
+				8336AB97208D826F00C28A00 /* UpcomingDisplayDataCollector.swift */,
 			);
 			path = Prensenter;
 			sourceTree = "<group>";
@@ -322,7 +323,6 @@
 				8336AB8D208B268600C28A00 /* ListInteractorIO.swift */,
 				8336AB8F208B45A300C28A00 /* ListInteractor.swift */,
 				8336AB93208CA0F200C28A00 /* UpcomingItem.swift */,
-				8336AB95208CA10E00C28A00 /* UpcomingItemInterface.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -440,11 +440,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				836CB0682044DFB80020376D /* CoreDataStore.swift in Sources */,
-				8336AB96208CA10E00C28A00 /* UpcomingItemInterface.swift in Sources */,
 				836CB09620467FA20020376D /* ListDataManager.swift in Sources */,
 				836CB063204426610020376D /* TodoItem.swift in Sources */,
 				8336AB90208B45A300C28A00 /* ListInteractor.swift in Sources */,
 				8311DD10204BC02300397BB4 /* ListModuleInterface.swift in Sources */,
+				8336AB98208D826F00C28A00 /* UpcomingDisplayDataCollector.swift in Sources */,
 				830F10E52038260D000516A9 /* AppDependencies.swift in Sources */,
 				8336AB94208CA0F200C28A00 /* UpcomingItem.swift in Sources */,
 				836CB05C2043D3760020376D /* RootWireframe.swift in Sources */,

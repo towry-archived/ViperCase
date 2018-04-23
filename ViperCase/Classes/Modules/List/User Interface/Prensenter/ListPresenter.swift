@@ -15,6 +15,7 @@ class ListPresenter: ListModuleInterface {
     var userInterface: ListViewInterface?
     
     func updateView() {
+        
         self.listInteractor?.findUpcomingItems()
     }
     
@@ -25,12 +26,9 @@ class ListPresenter: ListModuleInterface {
 }
 
 extension ListPresenter: ListInteractorOutput {
-    func foundUpcomingItems(upcomingItems: [UpcomingItemInterface]) {
-        // pass
-    }
-    
     func foundUpcomingItems(upcomingItems: [UpcomingItem]) {
         if (upcomingItems.count == 0) {
+            print("no items")
             return (self.userInterface?.showNoContentMessage())!
         }
         
@@ -42,6 +40,9 @@ extension ListPresenter: ListInteractorOutput {
     }
     
     func upcomingDisplayDataWithItems(upcomingItems: [UpcomingItem]) -> UpcomingDisplayData {
-//        UpcomingDisplay
+        let collector = UpcomingDisplayDataCollector()
+        collector.addUpcomingItems(upcomingItems: upcomingItems)
+        
+        return collector.collectedDisplayData()
     }
 }

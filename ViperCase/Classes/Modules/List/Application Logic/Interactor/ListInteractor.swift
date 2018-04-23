@@ -8,7 +8,11 @@
 
 import Foundation
 
-
-class ListInteractor {
-    weak var output: ListInteractorOutputConcrete<Int>?
+class ListInteractor: ListInteractorInput {
+    weak var output: ListInteractorOutput?
+    
+    func findUpcomingItems() {
+        print("findUpcomingItems")
+        self.output?.foundUpcomingItems(upcomingItems: [])
+    }
 }
