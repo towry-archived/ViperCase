@@ -12,6 +12,7 @@ class ListWireframe {
     static let ListViewControllerIdentifier = "ListViewController";
     var rootWireframe: RootWireframe?
     var listPresenter: ListPresenter?
+    var addWireframe: AddWireframe?
     
     func presentListInterfaceFrom(window: UIWindow) {
         let listViewController: ListViewController? = self.listViewControllerFromStoryboard()
@@ -22,8 +23,7 @@ class ListWireframe {
     }
     
     func presentAddInterface() {
-        // todo
-        print("Add")
+        
     }
     
     private func listViewControllerFromStoryboard() -> ListViewController? {
