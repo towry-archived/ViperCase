@@ -10,7 +10,8 @@ import Foundation
 
 extension Array {
     typealias T = Element
-    
+
+    // just a map fn
     func arrayFromObjectsCollectedWithBlock<C>(_ block: (_ object: T) -> C) -> Array<C> {
         return self.map {
             return block($0)

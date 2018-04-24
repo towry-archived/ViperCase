@@ -39,6 +39,5 @@ final class AppDependencies {
         self.listWireframe = listWireframe
         
         // Add module classes
-        
     }
 }

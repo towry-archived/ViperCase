@@ -8,10 +8,10 @@
 
 import Foundation
 
-enum NearTermDateRelation {
-    case nearTermDateRelationOutOfRange
-    case nearTermDateRelationToday
-    case nearTermDateRelationTomorrow
-    case nearTermDateRelationLaterThisWeek
-    case nearTermDateRelationNextWeek
+enum NearTermDateRelation: Int {
+    case nearTermDateRelationOutOfRange = 1
+    case nearTermDateRelationToday = 2
+    case nearTermDateRelationTomorrow = 3
+    case nearTermDateRelationLaterThisWeek = 4
+    case nearTermDateRelationNextWeek = 5
 }

@@ -15,12 +15,10 @@ class ListPresenter: ListModuleInterface {
     var userInterface: ListViewInterface?
     
     func updateView() {
-        
         self.listInteractor?.findUpcomingItems()
     }
     
     func addNewEntry() {
-        print("addNewEntry")
         self.listWireframe?.presentAddInterface()
     }
 }
