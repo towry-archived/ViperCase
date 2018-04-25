@@ -26,6 +26,7 @@ final class AppDependencies {
         
         // List modules classes
         let listWireframe = ListWireframe()
+        let addWireframe = AddWireframe()
         let listPresenter = ListPresenter()
         let listInteractor = ListInteractor()
         
@@ -36,6 +37,7 @@ final class AppDependencies {
         
         listWireframe.rootWireframe = rootWireframe
         listWireframe.listPresenter = listPresenter
+        listWireframe.addWireframe = addWireframe
         self.listWireframe = listWireframe
         
         // Add module classes

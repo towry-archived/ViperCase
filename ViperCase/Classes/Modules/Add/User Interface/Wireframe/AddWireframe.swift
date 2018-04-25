@@ -10,21 +10,26 @@ import UIKit
 
 class AddWireframe: NSObject {
     static let kAddViewControllerIdentifier = "AddViewController"
+    
     lazy var mainStoryboard: UIStoryboard = {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         return storyboard
     }()
-    var addPresenter: AddPresenter?
+    
+    internal var addPresenter: AddPresenter?
     private var presentedViewController: UIViewController?
     
     func presentAddInterfaceFromViewController(viewController: UIViewController) {
+        print("present add")
         let addViewController = self.addViewController()
         addViewController.eventHandler = self.addPresenter;
         addViewController.modalPresentationStyle = .custom
         addViewController.transitioningDelegate = self
         
         self.addPresenter?.configureUserInterfaceForPresentation(addViewUserInterface: addViewController)
+        viewController.present(addViewController, animated: true, completion: nil)
+        
         self.presentedViewController = viewController
     }
     
@@ -35,15 +40,15 @@ class AddWireframe: NSObject {
     }
     
     func dismissAddInterface() {
-        
+        self.presentedViewController?.dismiss(animated: true, completion: nil)
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning {
-        
+        return AddDismissalTransition()
     }
     
     func animationControllerForPresentedController(presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning {
-        
+        return AddPresentationTransition()
     }
 }
 
