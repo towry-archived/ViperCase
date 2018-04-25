@@ -25,6 +25,11 @@
 		8336ABA3208ECC4700C28A00 /* AddModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABA2208ECC4700C28A00 /* AddModuleInterface.swift */; };
 		8336ABA5208ECC8400C28A00 /* AddModuleDelegateInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABA4208ECC8400C28A00 /* AddModuleDelegateInterface.swift */; };
 		8336ABA7208ECD1F00C28A00 /* AddViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABA6208ECD1F00C28A00 /* AddViewInterface.swift */; };
+		8336ABAA208F034700C28A00 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABA9208F034700C28A00 /* AddPresenter.swift */; };
+		8336ABAF208F047F00C28A00 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABAE208F047F00C28A00 /* AddInteractor.swift */; };
+		8336ABB1208F04F900C28A00 /* AddDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABB0208F04F900C28A00 /* AddDataManager.swift */; };
+		8336ABB42090146700C28A00 /* AddDismissalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABB32090146700C28A00 /* AddDismissalTransition.swift */; };
+		8336ABB620901FA300C28A00 /* AddPresentationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABB520901FA300C28A00 /* AddPresentationTransition.swift */; };
 		8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */; };
 		8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA582048DDCE00B4C29A /* Array+HOM.swift */; };
 		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
@@ -76,6 +81,11 @@
 		8336ABA2208ECC4700C28A00 /* AddModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModuleInterface.swift; sourceTree = "<group>"; };
 		8336ABA4208ECC8400C28A00 /* AddModuleDelegateInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModuleDelegateInterface.swift; sourceTree = "<group>"; };
 		8336ABA6208ECD1F00C28A00 /* AddViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewInterface.swift; sourceTree = "<group>"; };
+		8336ABA9208F034700C28A00 /* AddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
+		8336ABAE208F047F00C28A00 /* AddInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
+		8336ABB0208F04F900C28A00 /* AddDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataManager.swift; sourceTree = "<group>"; };
+		8336ABB32090146700C28A00 /* AddDismissalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDismissalTransition.swift; sourceTree = "<group>"; };
+		8336ABB520901FA300C28A00 /* AddPresentationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresentationTransition.swift; sourceTree = "<group>"; };
 		8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+CalendarAdditions.swift"; sourceTree = "<group>"; };
 		8357DA582048DDCE00B4C29A /* Array+HOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM.swift"; sourceTree = "<group>"; };
 		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
@@ -192,6 +202,7 @@
 		8336AB99208ECB2100C28A00 /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				8336ABAB208F046000C28A00 /* Application Logic */,
 				8336ABA1208ECC2300C28A00 /* Module Interface */,
 				8336AB9D208ECBC800C28A00 /* User Interface */,
 			);
@@ -209,6 +220,8 @@
 		8336AB9D208ECBC800C28A00 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				8336ABB22090145300C28A00 /* Transition */,
+				8336ABA8208F033300C28A00 /* Presenter */,
 				8336AB9E208ECBE100C28A00 /* View */,
 				8336AB9A208ECB2C00C28A00 /* Wireframe */,
 			);
@@ -231,6 +244,48 @@
 				8336ABA4208ECC8400C28A00 /* AddModuleDelegateInterface.swift */,
 			);
 			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		8336ABA8208F033300C28A00 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8336ABA9208F034700C28A00 /* AddPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8336ABAB208F046000C28A00 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8336ABAD208F047600C28A00 /* Manager */,
+				8336ABAC208F046E00C28A00 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		8336ABAC208F046E00C28A00 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8336ABAE208F047F00C28A00 /* AddInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8336ABAD208F047600C28A00 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8336ABB0208F04F900C28A00 /* AddDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8336ABB22090145300C28A00 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				8336ABB32090146700C28A00 /* AddDismissalTransition.swift */,
+				8336ABB520901FA300C28A00 /* AddPresentationTransition.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 		8357DA5420481DA600B4C29A /* Extension */ = {
@@ -498,6 +553,8 @@
 				836CB09620467FA20020376D /* ListDataManager.swift in Sources */,
 				836CB063204426610020376D /* TodoItem.swift in Sources */,
 				8336AB90208B45A300C28A00 /* ListInteractor.swift in Sources */,
+				8336ABAA208F034700C28A00 /* AddPresenter.swift in Sources */,
+				8336ABB1208F04F900C28A00 /* AddDataManager.swift in Sources */,
 				8311DD10204BC02300397BB4 /* ListModuleInterface.swift in Sources */,
 				8336AB98208D826F00C28A00 /* UpcomingDisplayDataCollector.swift in Sources */,
 				8336ABA7208ECD1F00C28A00 /* AddViewInterface.swift in Sources */,
@@ -512,15 +569,18 @@
 				836EFEB2203EFE760084B86E /* ListViewController.swift in Sources */,
 				8336AB8C208B25D500C28A00 /* ListPresenter.swift in Sources */,
 				8399E943204D68A000AF7C2A /* UpcomingDisplaySection.swift in Sources */,
+				8336ABB42090146700C28A00 /* AddDismissalTransition.swift in Sources */,
 				8336ABA0208ECC0800C28A00 /* AddViewController.swift in Sources */,
 				836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */,
 				8399E945204E215E00AF7C2A /* UpcomingDisplayItem.swift in Sources */,
 				8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */,
 				8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */,
 				836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */,
+				8336ABAF208F047F00C28A00 /* AddInteractor.swift in Sources */,
 				8336AB8E208B268600C28A00 /* ListInteractorIO.swift in Sources */,
 				830F10DD20381BAB000516A9 /* AppDelegate.swift in Sources */,
 				836CB06B204521F40020376D /* ManagedTodoItem.swift in Sources */,
+				8336ABB620901FA300C28A00 /* AddPresentationTransition.swift in Sources */,
 				836CB066204427F70020376D /* NearTermDateRelation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
