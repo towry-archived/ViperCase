@@ -24,6 +24,16 @@ class AddViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func save(sender: Any) {
+        self.eventHandler?.cancelAddAction()
+        return
+//        self.eventHandler?.saveAddActionWithName(name: (self.nameTextField?.text)!, dueDate: (self.datePicker?.date)!)
+    }
+    
+    @IBAction func cancel(sender: Any) {
+        self.eventHandler?.cancelAddAction()
+    }
 }
 
 extension AddViewController: AddViewInterface {

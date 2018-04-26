@@ -19,6 +19,7 @@ extension AddPresentationTransition: UIViewControllerAnimatedTransitioning {
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        print("animate transition")
         let fromVc = transitionContext.viewController(forKey: .from)
         let toVc: AddViewController = transitionContext.viewController(forKey: .to) as! AddViewController
         
@@ -34,7 +35,6 @@ extension AddPresentationTransition: UIViewControllerAnimatedTransitioning {
         toVc.transitioningBackgroundView = blurView
         
         let containerView: UIView = transitionContext.containerView
-        containerView.addSubview((fromVc?.view)!)
         containerView.addSubview(blurView)
         containerView.addSubview(toVc.view)
         

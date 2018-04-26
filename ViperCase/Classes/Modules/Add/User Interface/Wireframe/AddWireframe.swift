@@ -54,13 +54,12 @@ class AddWireframe: NSObject {
 
 // MARK: - UIViewControllerTransitioningDelegate methods
 
-// TODO: add objects.
 extension AddWireframe: UIViewControllerTransitioningDelegate {
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return nil
+        return AddDismissalTransition()
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return nil
+        return AddPresentationTransition()
     }
 }

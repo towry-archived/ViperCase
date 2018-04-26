@@ -44,3 +44,15 @@ extension ListPresenter: ListInteractorOutput {
         return collector.collectedDisplayData()
     }
 }
+
+// MARK: - AddModuleDelegate methods
+
+extension ListPresenter: AddModuleDelegate {
+    func addModuleDidCancelAddAction() {
+        // No action necessary
+    }
+    
+    func addModuleDidSaveAddAction() {
+        self.updateView()
+    }
+}
