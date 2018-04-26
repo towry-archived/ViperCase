@@ -26,9 +26,12 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func save(sender: Any) {
-        self.eventHandler?.cancelAddAction()
-        return
-//        self.eventHandler?.saveAddActionWithName(name: (self.nameTextField?.text)!, dueDate: (self.datePicker?.date)!)
+        guard let text = self.nameTextField?.text, let dueDate = self.datePicker?.date else {
+            self.eventHandler?.cancelAddAction()
+            return
+        }
+        
+        self.eventHandler?.saveAddActionWithName(name: text, dueDate: dueDate)
     }
     
     @IBAction func cancel(sender: Any) {

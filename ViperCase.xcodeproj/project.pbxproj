@@ -30,6 +30,7 @@
 		8336ABB1208F04F900C28A00 /* AddDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABB0208F04F900C28A00 /* AddDataManager.swift */; };
 		8336ABB42090146700C28A00 /* AddDismissalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABB32090146700C28A00 /* AddDismissalTransition.swift */; };
 		8336ABB620901FA300C28A00 /* AddPresentationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABB520901FA300C28A00 /* AddPresentationTransition.swift */; };
+		8336ABB82091DA7E00C28A00 /* UIImage+ImageEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABB72091DA7E00C28A00 /* UIImage+ImageEffect.swift */; };
 		8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */; };
 		8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA582048DDCE00B4C29A /* Array+HOM.swift */; };
 		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
@@ -86,6 +87,7 @@
 		8336ABB0208F04F900C28A00 /* AddDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataManager.swift; sourceTree = "<group>"; };
 		8336ABB32090146700C28A00 /* AddDismissalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDismissalTransition.swift; sourceTree = "<group>"; };
 		8336ABB520901FA300C28A00 /* AddPresentationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresentationTransition.swift; sourceTree = "<group>"; };
+		8336ABB72091DA7E00C28A00 /* UIImage+ImageEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageEffect.swift"; sourceTree = "<group>"; };
 		8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+CalendarAdditions.swift"; sourceTree = "<group>"; };
 		8357DA582048DDCE00B4C29A /* Array+HOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM.swift"; sourceTree = "<group>"; };
 		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 			children = (
 				8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */,
 				8357DA582048DDCE00B4C29A /* Array+HOM.swift */,
+				8336ABB72091DA7E00C28A00 /* UIImage+ImageEffect.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				8336ABA0208ECC0800C28A00 /* AddViewController.swift in Sources */,
 				836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */,
 				8399E945204E215E00AF7C2A /* UpcomingDisplayItem.swift in Sources */,
+				8336ABB82091DA7E00C28A00 /* UIImage+ImageEffect.swift in Sources */,
 				8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */,
 				8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */,
 				836EFEB4203EFE950084B86E /* ListViewInterface.swift in Sources */,
