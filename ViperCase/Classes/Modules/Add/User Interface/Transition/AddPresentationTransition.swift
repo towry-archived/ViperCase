@@ -26,11 +26,17 @@ extension AddPresentationTransition: UIViewControllerAnimatedTransitioning {
         let blurView: UIImageView = UIImageView(frame: UIScreen.main.bounds)
         blurView.alpha = 0.0
         
-//        UIGraphicsBeginImageContextWithOptions(UIScreen.main.bounds.size, false, UIScreen.main.scale)
-//        fromVc?.view.drawHierarchy(in: UIScreen.main.bounds, afterScreenUpdates: true)
+        // begine graphics context
+        UIGraphicsBeginImageContextWithOptions(UIScreen.main.bounds.size, false, UIScreen.main.scale)
+        fromVc?.view.drawHierarchy(in: UIScreen.main.bounds, afterScreenUpdates: true)
         
-//        var blurredImage: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
-//        blurredImage = blurredImage?.
+        var blurredImage: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
+        blurredImage = blurredImage?.applyDarkEffect()
+        
+        // end context
+        UIGraphicsEndImageContext()
+        
+        blurView.image = blurredImage
         
         toVc.transitioningBackgroundView = blurView
         
