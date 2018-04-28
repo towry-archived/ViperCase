@@ -19,19 +19,26 @@ class ListDataManager {
     
     func todoItemsBetweenStartDate(startDate: Date, endDate: Date, completionBlock: ((_ todoItems: Array<TodoItem>) -> ())? = nil) {
         let cal = Calendar.autoupdatingCurrent
-        let predicate = NSPredicate(format: "(date >= %@) AND (date <= %@)", [cal.dateForBeginningOfDay(date: startDate), cal.dateForEndOfDay(date: endDate)])
-        let sortDescriptors: Array<ManagedTodoItem> = []
         
-        self.dataStore?.fetchEntriesWithPredicate(predicate: predicate, sortDescriptors: sortDescriptors) { (entries: Array<ManagedTodoItem>) -> Void in
+        guard let endOfDay = cal.dateForEndOfDay(date: endDate),
+            let beginOfDay = cal.dateForBeginningOfDay(date: startDate) else {
+            return
+        }
+        
+        let predicate = NSPredicate(format: "(date >= %@) AND (date <= %@)", argumentArray: [endOfDay, beginOfDay])
+        let sortDescriptors: Array<ManagedTodoItem> = [ManagedTodoItem]()
+        
+        // weak self ?
+        self.dataStore?.fetchEntriesWithPredicate(predicate: predicate, sortDescriptors: sortDescriptors) { (results: Array<ManagedTodoItem>?) -> Void in
             if let completionBlock = completionBlock {
-                completionBlock(self.todoItemsFromDataStoreEntries(entries: entries))
+                completionBlock(self.todoItemsFromDataStoreEntries(entries: results))
             }
         }
     }
     
-    private func todoItemsFromDataStoreEntries(entries: Array<ManagedTodoItem>) -> Array<TodoItem> {
+    private func todoItemsFromDataStoreEntries(entries: Array<ManagedTodoItem>?) -> Array<TodoItem> {
 //        return entries.block
-        return entries.arrayFromObjectsCollectedWithBlock { item in
+        return entries!.arrayFromObjectsCollectedWithBlock { item in
             return TodoItem.todoItemWithDueDate(item.date!, name: item.name!)
         }
     }

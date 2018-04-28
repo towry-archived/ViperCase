@@ -22,7 +22,7 @@ class UpcomingItem {
     
     static func upcomingItemWithDateRelation(dateRelation: NearTermDateRelation,
                                              dueDate: Date,
-                                             title: String) -> AnyObject {
+                                             title: String) -> UpcomingItem {
         return UpcomingItem(dateRelation: dateRelation, dueDate: dueDate, title: title)
     }
     

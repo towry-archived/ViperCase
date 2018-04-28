@@ -15,7 +15,7 @@ class ListViewController: UITableViewController  {
     public var eventHandler: ListModuleInterface?
     fileprivate var data: UpcomingDisplayData?
     fileprivate var strongTableView: UITableView?
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +27,13 @@ class ListViewController: UITableViewController  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func configureView() {
         self.navigationItem.title = "VIPER TODO"
         let addBtn = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAddButton(sender:)))
         self.navigationItem.rightBarButtonItem = addBtn
     }
-    
+
     @objc func didTapAddButton(sender: Any) {
         print("tap")
         if self.eventHandler == nil {
@@ -41,7 +41,7 @@ class ListViewController: UITableViewController  {
         }
         self.eventHandler?.addNewEntry()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.eventHandler?.updateView()
@@ -55,43 +55,50 @@ extension ListViewController {
         guard let data = self.data else {
             return 0
         }
-        
+        print("numberOfSections: \(data.sections.count)")
         return data.sections.count
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let data = self.data else {
             return 0
         }
-        
+
         let upcomingSection = data.sections[section]
+        print("numberOfRowsInSection: \(upcomingSection.items.count)")
         return upcomingSection.items.count
     }
-    
+
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         guard let data = self.data else {
             return ""
         }
-        
+
         let upcomingSection = data.sections[section]
         return upcomingSection.name
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("cellForRow")
         guard let data = self.data else {
+            print("default cell")
             return self.tableView.dequeueReusableCell(withIdentifier: ListEntryCellIdentifier)!
         }
-        
+
         let section = data.sections[indexPath.section]
         let item = section.items[indexPath.row]
-        
+        debugPrint(item)
+
         let cell: UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: ListEntryCellIdentifier, for: indexPath)
         
+        print(item.title)
+        print(item.dueDay)
+
         cell.textLabel?.text = item.title
         cell.detailTextLabel?.text = item.dueDay
         cell.imageView?.image = UIImage(named: section.imageName)
         cell.selectionStyle = UITableViewCellSelectionStyle.none
-        
+
         return cell
     }
 }
@@ -99,18 +106,19 @@ extension ListViewController {
 // MARK: - Extension ListViewInterface
 
 extension ListViewController: ListViewInterface {
-    
+
     func showNoContentMessage() {
         print("showNoContentMessage")
         self.view = self.noContentView
     }
-    
+
     func showUpcomingDisplayData(_ data: UpcomingDisplayData) {
         self.view = self.strongTableView!
         self.data = data
+        debugPrint(data)
         self.reloadEntries()
     }
-    
+
     func reloadEntries() {
         self.tableView.reloadData()
     }

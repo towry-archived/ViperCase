@@ -31,8 +31,8 @@ class UpcomingDisplayDataCollector {
     }
 
     func collectedDisplayData() -> UpcomingDisplayData {
-        let displaySections = self.collectedSectionKeys().map {
-            return self.displaySectionForKey(sectionKey: $0)
+        let displaySections = self.collectedSectionKeys().map { (key: Key) ->UpcomingDisplaySection in
+            return self.displaySectionForKey(sectionKey: key)
         }
         return UpcomingDisplayData(sections: displaySections)
     }
@@ -46,12 +46,14 @@ class UpcomingDisplayDataCollector {
     }
 
     func collectedSectionKeys() -> [Key] {
+        print(self.sections.count)
         return self.sections.keys.sorted(by: <)
     }
 
     func addDisplayItem(displayItem: UpcomingDisplayItem, withDateRelation dateRelation: NearTermDateRelation) {
         var sectionItems: [UpcomingDisplayItem]? = self.sectionItemsForDateRelation(dateRelation: dateRelation)
         sectionItems?.append(displayItem)
+        self.sections[dateRelation.rawValue] = sectionItems!
     }
 
     func sectionItemsForDateRelation(dateRelation: NearTermDateRelation) -> [UpcomingDisplayItem]? {
@@ -60,7 +62,6 @@ class UpcomingDisplayDataCollector {
 
         if (section == nil) {
             section = [UpcomingDisplayItem]()
-            sections[dateRelation.rawValue] = section
         }
 
         return section

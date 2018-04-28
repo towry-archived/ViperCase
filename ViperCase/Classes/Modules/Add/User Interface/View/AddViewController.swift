@@ -31,6 +31,11 @@ class AddViewController: UIViewController {
             return
         }
         
+        if text.isEmpty {
+            self.eventHandler?.cancelAddAction()
+            return
+        }
+
         self.eventHandler?.saveAddActionWithName(name: text, dueDate: dueDate)
     }
     

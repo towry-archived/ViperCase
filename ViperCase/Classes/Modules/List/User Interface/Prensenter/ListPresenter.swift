@@ -26,10 +26,8 @@ class ListPresenter: ListModuleInterface {
 extension ListPresenter: ListInteractorOutput {
     func foundUpcomingItems(upcomingItems: [UpcomingItem]) {
         if (upcomingItems.count == 0) {
-            print("no items")
             return (self.userInterface?.showNoContentMessage())!
         }
-        
         self.updateUserInterfaceWithUpcomingItems(upcomingItems: upcomingItems)
     }
     

@@ -12,10 +12,15 @@ class AddDataManager {
     var dataStore: CoreDataStore?
     
     func addNewEntry(_ entry: TodoItem) {
-        let newEntry = self.dataStore?.newTodoItem()
-        newEntry?.name = entry.name
-        newEntry?.date = entry.dueDate
+        guard let newEntry = self.dataStore?.newTodoItem() else {
+            print("nil entry")
+            return
+        }
         
+        
+        newEntry.name = entry.name
+        newEntry.date = entry.dueDate
+
         self.dataStore?.saveContext()
     }
 }

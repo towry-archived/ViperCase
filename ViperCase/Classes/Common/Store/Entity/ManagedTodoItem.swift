@@ -9,6 +9,9 @@
 import Foundation
 import CoreData
 
+// https://stackoverflow.com/a/26614152/796919
+
+//@objc(TodoItem)
 class ManagedTodoItem : NSManagedObject {
     @NSManaged var name: String?
     @NSManaged var date: Date?

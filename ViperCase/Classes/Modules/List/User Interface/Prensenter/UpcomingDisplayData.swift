@@ -10,6 +10,11 @@ import Foundation
 
 class UpcomingDisplayData {
     var sections: [UpcomingDisplaySection]
+    var isEmpty: Bool {
+        get {
+            return self.sections.count == 0
+        }
+    }
     
     init(sections: [UpcomingDisplaySection]) {
         self.sections = sections

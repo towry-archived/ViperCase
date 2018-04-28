@@ -21,8 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("data store created, disable the ui loading")
         }
         
-        let dependencies = AppDependencies()
-        dependencies.dataStore = self.dataStore
+        let dependencies = AppDependencies(self.dataStore)
         dependencies.installRootViewControllerIntoWindow(window: window!)
     
         return true

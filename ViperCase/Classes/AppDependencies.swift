@@ -12,7 +12,8 @@ final class AppDependencies {
     var listWireframe: ListWireframe?
     var dataStore: CoreDataStore?
 
-    init() {
+    init(_ dataStore: CoreDataStore?) {
+        self.dataStore = dataStore
         self.configureDependencies()
     }
 
@@ -28,12 +29,16 @@ final class AppDependencies {
         let listWireframe = ListWireframe()
         let addWireframe = AddWireframe()
         let listPresenter = ListPresenter()
+        let listDataManager = ListDataManager()
         let listInteractor = ListInteractor()
         let addPresenter = AddPresenter()
         let addInteractor = AddInteractor()
         let addDataManager = AddDataManager()
-
+        
+        listDataManager.dataStore = self.dataStore
+        
         listInteractor.output = listPresenter
+        listInteractor.dataManager = listDataManager
 
         listPresenter.listWireframe = listWireframe
         listPresenter.listInteractor = listInteractor

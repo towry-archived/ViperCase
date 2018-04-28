@@ -33,6 +33,7 @@
 		8336ABB82091DA7E00C28A00 /* UIImage+ImageEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8336ABB72091DA7E00C28A00 /* UIImage+ImageEffect.swift */; };
 		8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */; };
 		8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357DA582048DDCE00B4C29A /* Array+HOM.swift */; };
+		835E3F212094070600B5ECAD /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E3F202094070600B5ECAD /* Clock.swift */; };
 		836CB05C2043D3760020376D /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05B2043D3760020376D /* RootWireframe.swift */; };
 		836CB05F2043D5320020376D /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB05E2043D5320020376D /* ListWireframe.swift */; };
 		836CB063204426610020376D /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CB062204426610020376D /* TodoItem.swift */; };
@@ -90,6 +91,7 @@
 		8336ABB72091DA7E00C28A00 /* UIImage+ImageEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageEffect.swift"; sourceTree = "<group>"; };
 		8357DA5520481F0000B4C29A /* Calendar+CalendarAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+CalendarAdditions.swift"; sourceTree = "<group>"; };
 		8357DA582048DDCE00B4C29A /* Array+HOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+HOM.swift"; sourceTree = "<group>"; };
+		835E3F202094070600B5ECAD /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		836CB05B2043D3760020376D /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		836CB05E2043D5320020376D /* ListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		836CB062204426610020376D /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				836CB061204426440020376D /* Store */,
 				836CB060204426370020376D /* Model */,
 				836CB05A2043D3610020376D /* View */,
+				835E3F202094070600B5ECAD /* Clock.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				8336ABA0208ECC0800C28A00 /* AddViewController.swift in Sources */,
 				836CB06E204526A50020376D /* TODO.xcdatamodeld in Sources */,
 				8399E945204E215E00AF7C2A /* UpcomingDisplayItem.swift in Sources */,
+				835E3F212094070600B5ECAD /* Clock.swift in Sources */,
 				8336ABB82091DA7E00C28A00 /* UIImage+ImageEffect.swift in Sources */,
 				8357DA592048DDCE00B4C29A /* Array+HOM.swift in Sources */,
 				8357DA5620481F0000B4C29A /* Calendar+CalendarAdditions.swift in Sources */,

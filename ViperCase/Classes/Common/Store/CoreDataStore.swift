@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-typealias DataStoreFetchCompletionBlock<T> = (_ results : Array<T>)  -> Void
+typealias DataStoreFetchCompletionBlock<T> = (_ results : Array<T>?)  -> Void
 
 class CoreDataStore {
     var persistentContainer: NSPersistentContainer
@@ -39,13 +39,34 @@ class CoreDataStore {
         }
     }
     
-    func fetchEntriesWithPredicate<T>(predicate: NSPredicate,
+    func fetchEntriesWithPredicate<T: NSManagedObject>(predicate: NSPredicate,
                                    sortDescriptors: Array<T>,
-                                   completionBlock: DataStoreFetchCompletionBlock<T>) {
+                                   completionBlock: DataStoreFetchCompletionBlock<T>?) {
+        print("fetchEntriesWithPredicate")
         
+        let fetchRequest = NSFetchRequest<T>(entityName: "TodoItem")
+        fetchRequest.predicate = predicate
+        fetchRequest.sortDescriptors = nil
+        
+        self.persistentContainer.viewContext.perform {
+            var results: [T]? = nil
+            
+            do {
+                results = try self.persistentContainer.viewContext.fetch(fetchRequest)
+            } catch {
+                print("err")
+            }
+            
+            if completionBlock != nil {
+                completionBlock!(results)
+            }
+        }
     }
     
     func newTodoItem() -> ManagedTodoItem? {
-        return nil
+        let entityDescription = NSEntityDescription.entity(forEntityName: "TodoItem", in: self.persistentContainer.viewContext)
+        let newEntry: ManagedTodoItem = ManagedTodoItem(entity: entityDescription!, insertInto: self.persistentContainer.viewContext)
+        
+        return newEntry
     }
 }

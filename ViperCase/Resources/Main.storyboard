@@ -33,6 +33,7 @@
                 <viewController storyboardIdentifier="ListViewController" id="OSK-k8-oIZ" customClass="ListViewController" customModule="ViperCase" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <outlet property="noContentView" destination="Gx0-tc-oto" id="wm4-oo-8Bs"/>
+                        <outlet property="view" destination="Ptj-me-JuQ" id="Kou-6G-HjV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtR-ha-3L4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -55,6 +56,36 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="435"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <prototypes>
+                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListEntryCell" textLabel="2FQ-bg-BbK" detailTextLabel="hAd-lf-r3e" style="IBUITableViewCellStyleValue1" id="7xr-dv-YDe">
+                            <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xr-dv-YDe" id="BJR-Qv-dpY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2FQ-bg-BbK">
+                                        <rect key="frame" x="16" y="12" width="33.5" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hAd-lf-r3e">
+                                        <rect key="frame" x="180" y="12" width="44" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.4930675806" green="0.4948006854" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </tableViewCellContentView>
+                        </tableViewCell>
+                    </prototypes>
+                    <connections>
+                        <outlet property="dataSource" destination="OSK-k8-oIZ" id="iiH-1B-pAu"/>
+                        <outlet property="delegate" destination="OSK-k8-oIZ" id="9Ze-OZ-Hkg"/>
+                    </connections>
                 </tableView>
             </objects>
             <point key="canvasLocation" x="-38" y="-125"/>

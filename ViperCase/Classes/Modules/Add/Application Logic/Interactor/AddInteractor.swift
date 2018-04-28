@@ -13,7 +13,6 @@ class AddInteractor {
     
     func saveNewEntryWithName(name: String, dueDate: Date) {
         let item = TodoItem(name: name, dueDate: dueDate)
-        print("add item in interactor")
         self.addDataManager?.addNewEntry(item)
     }
 }
